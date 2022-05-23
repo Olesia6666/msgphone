@@ -1,0 +1,23 @@
+package com.example.msgphone
+
+import android.content.Context
+import android.database.sqlite.SQLiteDatabase
+import android.database.sqlite.SQLiteOpenHelper
+
+class UserDatabaseHelper(val context: Context, name: String, version: Int): SQLiteOpenHelper(context,name,null,version) {
+    private val createUser = "create table User(" +
+            "id integer primary key," +
+            "username text," +
+            "account text," +
+            "password text)"
+
+
+    override fun onCreate(db: SQLiteDatabase?) {
+        db?.execSQL(createUser)
+    }
+
+    override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
+        db?.execSQL("drop table if exists User")
+    }
+
+}

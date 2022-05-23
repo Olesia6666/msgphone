@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">msgphone</string>
+    <string name="title_activity_msg_portal">msg_portal</string>
+    <string name="title_Chats">Chats</string>
+    <string name="title_Contacts">Contacts</string>
+    <string name="title_More">More</string>
+    <string name="title_Me">Me</string>
+    <string name="title_Zust">Zust</string>
+    <string name="MsgPhone">MsgPhone</string>
+    <string name="Acc">账号</string>
+    <string name="Pwd">密码</string>
+    <string name="Nickname_Hint">请输入用户名</string>
+    <string name="Acc_Hint">请输入账号</string>
+    <string name="Pwd_Hint">请输入密码</string>
+    <string name="PwdConfirm_Hint">请确认密码</string>
+    <string name="passwordConfirm">两次输入的密码不正确</string>
+    <string name="Login">登陆</string>
+    <string name="Register">注册</string>
+    <string name="Nickname">用\t\t户\t\t名</string>
+    <string name="Account">账\t\t\t\t\t\t号</string>
+    <string name="Password">密\t\t\t\t\t\t码</string>
+    <string name="RePassword">确认密码</string>
+    <string name="Submit">提交</string>
+
+
+</resources>
