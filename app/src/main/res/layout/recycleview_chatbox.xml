@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/profilePic_Iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/profilepic2" />
+
+    <TextView
+        android:id="@+id/msgName_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/profilePic_Iv"
+        android:text="Olesia"
+        android:textSize="30sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/msg_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/profilePic_Iv"
+        android:layout_below="@+id/msgName_Tv"
+        android:text="Hello World!"
+        android:textSize="20sp"
+        android:textColor="@color/gray"/>
+
+</RelativeLayout>

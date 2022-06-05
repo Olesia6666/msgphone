@@ -63,8 +63,9 @@
             android:layout_toRightOf="@id/view1"
             android:background="@drawable/editview_bg_shape"
             android:hint="@string/Acc_Hint"
-            android:textColorHint="@color/gray"
-            android:textColor="@color/black">
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray">
+
             <requestFocus />
         </EditText>
 

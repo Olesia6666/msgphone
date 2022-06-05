@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/searchContacts_Et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/editview_bg_shape"
+        android:hint="@string/search_hint"/>
+
+    <ImageView
+        android:id="@+id/add_Iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_add_person"/>
+
+    <RelativeLayout
+        android:id="@+id/friend_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchContacts_Et"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/friendPic_Iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profilepic3" />
+
+        <TextView
+            android:id="@+id/friendName_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/friendPic_Iv"
+            android:gravity="center_vertical"
+            android:text="叶子穆"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">msgphone</string>
+    <string name="app_name">浙科通信</string>
+    <string name="title2">新一代沟通协作平台</string>
     <string name="title_activity_msg_portal">msg_portal</string>
     <string name="title_Chats">Chats</string>
     <string name="title_Contacts">Contacts</string>
@@ -21,6 +22,12 @@
     <string name="Password">密\t\t\t\t\t\t码</string>
     <string name="RePassword">确认密码</string>
     <string name="Submit">提交</string>
-
+    <string name="chat">聊天</string>
+    <string name="contacts">通讯录</string>
+    <string name="more">发现</string>
+    <string name="me">我</string>
+    <string name="message">消息</string>
+    <string name="search_hint">🔍搜索</string>
+    <string name="new_friend">新的朋友</string>
 
 </resources>

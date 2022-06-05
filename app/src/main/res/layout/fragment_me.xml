@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/me_Cl"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <com.example.msgphone.CycleImageView
+            android:id="@+id/myPic_Iv"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/pic1"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/myName_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:gravity="center_vertical"
+            android:text="Olesia"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@+id/myPic_Iv"
+            app:layout_constraintStart_toEndOf="@+id/myPic_Iv"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/myId_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="1181591034"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/myName_Tv"
+
+            app:layout_constraintTop_toBottomOf="@+id/myName_Tv"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/gray_light"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/meItem_Cl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/me_Cl">
+
+
+        <ImageView
+            android:id="@+id/profile_Iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintEnd_toStartOf="@+id/profile_Tv"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon_person_profile"/>
+
+        <TextView
+            android:id="@+id/profile_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="80dp"
+            android:gravity="center_vertical"
+            android:text="个人信息"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/profileNext_Iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_next"
+            app:layout_constraintEnd_toEndOf="@id/profile_Tv"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/profile_Tv"
+            android:layout_marginStart="70dp"
+            android:background="@color/gray"/>
+
+        <ImageView
+            android:id="@+id/update_Iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon_update"
+            app:layout_constraintBottom_toBottomOf="@+id/update_Tv"
+            app:layout_constraintStart_toStartOf="@+id/profile_Iv"
+            app:layout_constraintTop_toBottomOf="@id/profile_Iv" />
+
+
+        <TextView
+            android:id="@+id/update_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="80dp"
+            android:gravity="center_vertical"
+            android:text="版本更新"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+        <TextView
+            android:id="@+id/version_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:text="1.0.0"
+            android:textColor="@color/gray"
+            android:textSize="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            app:layout_constraintEnd_toStartOf="@id/updateNext_Iv"/>
+
+        <ImageView
+            android:id="@+id/updateNext_Iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_next"
+            app:layout_constraintEnd_toEndOf="@id/profile_Tv"
+            app:layout_constraintBottom_toBottomOf="@+id/update_Tv"
+            app:layout_constraintTop_toBottomOf="@id/profile_Iv"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/update_Tv"
+            android:layout_marginStart="70dp"
+            android:background="@color/gray"/>
+
+        <ImageView
+            android:id="@+id/private_Iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon_lock"
+            app:layout_constraintBottom_toBottomOf="@+id/private_Tv"
+            app:layout_constraintStart_toStartOf="@+id/update_Iv"
+            app:layout_constraintTop_toBottomOf="@id/update_Iv" />
+
+
+        <TextView
+            android:id="@+id/private_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="80dp"
+            android:gravity="center_vertical"
+            android:text="隐私政策"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <ImageView
+            android:id="@+id/privateNext_Iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_next"
+            app:layout_constraintEnd_toEndOf="@id/profile_Tv"
+            app:layout_constraintBottom_toBottomOf="@+id/private_Tv"
+            app:layout_constraintTop_toBottomOf="@id/update_Iv"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"/>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            app:layout_constraintTop_toBottomOf="@id/private_Tv"
+            android:background="@color/gray_light"/>
+
+
+
+        <ImageView
+            android:id="@+id/setting_Iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/icon_setting"
+            app:layout_constraintBottom_toBottomOf="@+id/setting_Tv"
+            app:layout_constraintStart_toStartOf="@+id/private_Iv"
+            app:layout_constraintTop_toBottomOf="@id/private_Iv" />
+
+
+        <TextView
+            android:id="@+id/setting_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="80dp"
+            android:gravity="center_vertical"
+            android:text="设置"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <ImageView
+            android:id="@+id/settingNext_Iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_next"
+            app:layout_constraintEnd_toEndOf="@id/profile_Tv"
+            app:layout_constraintBottom_toBottomOf="@+id/setting_Tv"
+            app:layout_constraintTop_toBottomOf="@id/private_Iv"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/setting_Tv"
+            android:background="@color/gray_light"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
