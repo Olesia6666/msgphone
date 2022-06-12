@@ -44,8 +44,8 @@
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:text="@string/Acc"
-            android:textSize="25dp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="25dp" />
 
         <View
             android:id="@+id/view1"
@@ -63,6 +63,7 @@
             android:layout_toRightOf="@id/view1"
             android:background="@drawable/editview_bg_shape"
             android:hint="@string/Acc_Hint"
+            android:text="111111"
             android:textColor="@color/black"
             android:textColorHint="@color/gray">
 
@@ -110,14 +111,16 @@
 
         <EditText
             android:id="@+id/Password_Et"
-            android:password="true"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_toRightOf="@id/view2"
             android:background="@drawable/editview_bg_shape"
             android:hint="@string/Pwd_Hint"
-            android:textColorHint="@color/gray"
+            android:password="true"
+
+            android:text="111111"
             android:textColor="@color/black"
+            android:textColorHint="@color/gray"
             tools:ignore="Deprecated" />
 
         <ImageView

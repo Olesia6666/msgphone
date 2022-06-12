@@ -19,3 +19,18 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-dontwarn com.netease.nim.**
+-keep class com.netease.nim.** {*;}
+
+-dontwarn com.netease.nimlib.**
+-keep class com.netease.nimlib.** {*;}
+
+-dontwarn com.netease.share.**
+-keep class com.netease.share.** {*;}
+
+#如果你使用全文检索插件，需要加入
+-dontwarn org.apache.lucene.**
+-keep class org.apache.lucene.** {*;}
+
+#如果你开启数据库功能，需要加入
+-keep class net.sqlcipher.** {*;}

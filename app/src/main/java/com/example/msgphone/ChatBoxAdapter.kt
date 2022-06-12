@@ -14,7 +14,7 @@ class ChatBoxAdapter(private val msgList: ArrayList<Msg>): RecyclerView.Adapter<
         val msg : TextView = view.findViewById(R.id.msg_Tv)
         val profile_pic: ImageView = view.findViewById(R.id.profilePic_Iv)
     }
-
+    var listener: OnItemClickListener? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.recycleview_chatbox ,parent,false)
         val holder = ViewHolder(view)
@@ -30,5 +30,16 @@ class ChatBoxAdapter(private val msgList: ArrayList<Msg>): RecyclerView.Adapter<
         holder.msg.text = msgList.msg
         holder.profile_pic.setImageResource(msgList.profilePic)
 
+        holder.itemView.setOnClickListener {
+            listener?.onItemClick(position)
+        }
+    }
+    interface OnItemClickListener {
+        fun onItemClick(pos: Int)
+    }
+
+
+    fun setMyListener(listener:OnItemClickListener){
+        this.listener = listener
     }
 }
