@@ -1,12 +1,12 @@
-package com.example.msgphone
+package com.example.msgphone.portal.chat
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.msgphone.R
 
 class ChatBoxAdapter(private val msgList: ArrayList<Msg>): RecyclerView.Adapter<ChatBoxAdapter.ViewHolder>() {
     inner class ViewHolder(view: View): RecyclerView.ViewHolder(view){
@@ -16,7 +16,7 @@ class ChatBoxAdapter(private val msgList: ArrayList<Msg>): RecyclerView.Adapter<
     }
     var listener: OnItemClickListener? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.recycleview_chatbox ,parent,false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.recycleview_chatbox,parent,false)
         val holder = ViewHolder(view)
 
         return holder
@@ -39,7 +39,7 @@ class ChatBoxAdapter(private val msgList: ArrayList<Msg>): RecyclerView.Adapter<
     }
 
 
-    fun setMyListener(listener:OnItemClickListener){
+    fun setMyListener(listener: OnItemClickListener){
         this.listener = listener
     }
 }

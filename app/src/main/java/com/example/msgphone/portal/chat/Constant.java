@@ -3,7 +3,7 @@
  * Use of this source code is governed by a MIT license that can be found in the LICENSE file.
  */
 
-package com.example.msgphone;
+package com.example.msgphone.portal.chat;
 
 public class Constant {
 

@@ -1,4 +1,4 @@
-package com.example.msgphone
+package com.example.msgphone.portal.chat
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.msgphone.R
 
 import com.netease.yunxin.kit.corekit.im.model.UserInfo
 import com.netease.yunxin.kit.corekit.im.utils.RouterConstant.CHAT_KRY
@@ -27,7 +28,7 @@ class ChatFragment(private val msgList:ArrayList<Msg>) : Fragment() {
         /**
          *   这里需要传 UserInfo 对象过来处理
          */
-        val userInfo :UserInfo = UserInfo("123456","超出滴滴","123456");
+        val userInfo :UserInfo = UserInfo("1181591032","叶子穆","叶子穆");
         view.chat_Rv.layoutManager = layoutManager
         val adapter = ChatBoxAdapter(msgList)
         adapter.setMyListener ( object: ChatBoxAdapter.OnItemClickListener {

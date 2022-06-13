@@ -2,6 +2,7 @@ package com.example.msgphone
 
 import android.app.Application
 import android.content.Context
+import com.example.msgphone.utils.DataUtils
 import com.netease.nimlib.sdk.NIMClient
 import com.netease.yunxin.kit.alog.ALog
 import com.netease.yunxin.kit.alog.BasicInfo

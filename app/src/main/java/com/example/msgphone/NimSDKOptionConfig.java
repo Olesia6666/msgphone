@@ -10,6 +10,7 @@ import android.graphics.Color;
 import android.os.Environment;
 import android.text.TextUtils;
 
+import com.example.msgphone.portal.PortalActivity;
 import com.example.msgphone.push.PushUserInfoProvider;
 import com.netease.nimlib.sdk.NotificationFoldStyle;
 import com.netease.nimlib.sdk.SDKOptions;

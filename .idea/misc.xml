@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../../../layout/custom_preview.xml" value="0.2578125" />
+        <entry key="../../../../../../layout/custom_preview.xml" value="0.10277777777777777" />
         <entry key="..\:/Users/qinhuagui/Desktop/msgphone/app/src/main/res/layout/activity_login.xml" value="0.1734375" />
         <entry key="..\:/Users/qinhuagui/Desktop/msgphone/app/src/main/res/layout/activity_portal.xml" value="0.17314814814814813" />
         <entry key="..\:/Users/qinhuagui/Desktop/msgphone/app/src/main/res/layout/fragment_chat.xml" value="0.17314814814814813" />
@@ -14,27 +15,35 @@
         <entry key="app/src/main/res/drawable/ic_chat_24.xml" value="0.1195" />
         <entry key="app/src/main/res/drawable/ic_contact_24.xml" value="0.124" />
         <entry key="app/src/main/res/drawable/ic_contacts_24.xml" value="0.119" />
+        <entry key="app/src/main/res/drawable/ic_contacts_checked.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1395" />
         <entry key="app/src/main/res/drawable/ic_delete_24.xml" value="0.1285" />
+        <entry key="app/src/main/res/drawable/ic_group.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_group_checked.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1395" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1395" />
+        <entry key="app/src/main/res/drawable/ic_more_24.xml" value="0.144" />
         <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1395" />
         <entry key="app/src/main/res/drawable/shape_white_frame.xml" value="0.124" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.17096557617187502" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.26666666666666666" />
         <entry key="app/src/main/res/layout/activity_msg_portal.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_portal.xml" value="0.2764739990234375" />
+        <entry key="app/src/main/res/layout/activity_portal.xml" value="0.14990081787109374" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.10140991210937497" />
+        <entry key="app/src/main/res/layout/activity_user_info.xml" value="0.12371134020618557" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.14791666666666667" />
         <entry key="app/src/main/res/layout/fragment_chats.xml" value="0.18565400843881857" />
-        <entry key="app/src/main/res/layout/fragment_contacts.xml" value="0.13489583333333333" />
+        <entry key="app/src/main/res/layout/fragment_contacts.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.2791666666666667" />
+        <entry key="app/src/main/res/layout/fragment_group.xml" value="0.1390625" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22846984863281256" />
-        <entry key="app/src/main/res/layout/fragment_me.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_index.xml" value="0.17481884057971014" />
+        <entry key="app/src/main/res/layout/fragment_me.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_more.xml" value="0.13489583333333333" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.2791666666666667" />
         <entry key="app/src/main/res/layout/msg_portal.xml" value="0.22846984863281256" />
+        <entry key="app/src/main/res/layout/recycleview_card.xml" value="0.13855116514690982" />
         <entry key="app/src/main/res/layout/recycleview_chatbox.xml" value="0.14791666666666667" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2791666666666667" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
