@@ -3,11 +3,13 @@
  * Use of this source code is governed by a MIT license that can be found in the LICENSE file.
  */
 
-package com.example.msgphone;
+package com.example.msgphone.utils;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
+
+import com.example.msgphone.portal.chat.Constant;
 
 public class DataUtils {
 

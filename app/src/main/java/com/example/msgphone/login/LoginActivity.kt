@@ -1,23 +1,19 @@
-package com.example.msgphone
+package com.example.msgphone.login
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doAfterTextChanged
+import com.example.msgphone.R
+import com.example.msgphone.portal.PortalActivity
 import com.netease.nimlib.sdk.NIMClient
 import com.netease.nimlib.sdk.RequestCallback
 import com.netease.nimlib.sdk.auth.AuthService
 import com.netease.nimlib.sdk.auth.LoginInfo
-import com.netease.nimlib.sdk.qchat.result.QChatLoginResult
 import com.netease.yunxin.kit.alog.ALog
-import com.netease.yunxin.kit.corekit.im.XKitImClient
-import com.netease.yunxin.kit.corekit.im.login.LoginCallback
 import kotlinx.android.synthetic.main.activity_login.*
 
 
@@ -80,7 +76,7 @@ class LoginActivity : AppCompatActivity() {
 
         //点击注册按钮跳转到注册页面
         Register_Btn.setOnClickListener {
-            val intentRegister = Intent(this,RegisterActivity::class.java)
+            val intentRegister = Intent(this, RegisterActivity::class.java)
             startActivity(intentRegister)
         }
 

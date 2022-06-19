@@ -1,12 +1,12 @@
-package com.example.msgphone
+package com.example.msgphone.login
 
-import android.content.ContentValues
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.core.widget.doAfterTextChanged
-import kotlinx.android.synthetic.main.activity_login.*
+import com.example.msgphone.R
+import com.example.msgphone.UserDatabaseHelper
 import kotlinx.android.synthetic.main.activity_register.*
 import kotlinx.android.synthetic.main.activity_register.AccDelete_Iv
 

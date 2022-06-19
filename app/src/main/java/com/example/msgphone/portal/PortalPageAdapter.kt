@@ -1,4 +1,4 @@
-package com.example.msgphone
+package com.example.msgphone.portal
 
 import android.view.View
 import android.view.ViewGroup

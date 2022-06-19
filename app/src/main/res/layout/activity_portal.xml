@@ -67,11 +67,18 @@
                 android:src="@drawable/ic_contacts_24"/>
 
             <ImageView
-                android:id="@+id/moreIcon_Iv"
+                android:id="@+id/index_Iv"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/ic_more_24"/>
+                android:src="@drawable/ic_index"/>
+
+            <ImageView
+                android:id="@+id/groupIcon_Iv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_group"/>
 
             <ImageView
                 android:id="@+id/meIcon_Iv"
@@ -100,8 +107,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/ic_chat_24"
-                android:background="@color/gray"
+                android:src="@drawable/ic_chat_checked"
                 android:visibility="visible"/>
 
             <ImageView
@@ -109,17 +115,23 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/ic_contacts_24"
-                android:background="@color/gray"
+                android:src="@drawable/ic_contacts_checked"
                 android:visibility="invisible"/>
 
             <ImageView
-                android:id="@+id/moreChosen_Iv"
+                android:id="@+id/indexChosen_Iv"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/ic_more_24"
-                android:background="@color/gray"
+                android:src="@drawable/ic_index_checked"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/groupChosen_Iv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_group_checked"
                 android:visibility="invisible"/>
 
             <ImageView
@@ -127,8 +139,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/ic_me_24"
-                android:background="@color/gray"
+                android:src="@drawable/ic_me_checked"
                 android:visibility="invisible"/>
 
         </LinearLayout>
@@ -166,7 +177,15 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/more"
+                android:text="@string/index"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/group"
                 android:textSize="12sp"/>
 
             <TextView
@@ -199,7 +218,7 @@
                 android:gravity="center"
                 android:text="@string/chat"
                 android:textSize="12sp"
-                android:background="@color/gray"
+                android:textColor="@color/zust_yellow"
                 android:visibility="visible"/>
 
             <TextView
@@ -210,18 +229,29 @@
                 android:gravity="center"
                 android:text="@string/contacts"
                 android:textSize="12sp"
-                android:background="@color/gray"
+                android:textColor="@color/zust_yellow"
                 android:visibility="invisible"/>
 
             <TextView
-                android:id="@+id/moreChosen_Tv"
+                android:id="@+id/indexChosen_Tv"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/more"
+                android:text="@string/index"
                 android:textSize="12sp"
-                android:background="@color/gray"
+                android:textColor="@color/zust_yellow"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/groupChosen_Tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/group"
+                android:textSize="12sp"
+                android:textColor="@color/zust_yellow"
                 android:visibility="invisible"/>
 
             <TextView
@@ -232,7 +262,7 @@
                 android:gravity="center"
                 android:text="@string/me"
                 android:textSize="12sp"
-                android:background="@color/gray"
+                android:textColor="@color/zust_yellow"
                 android:visibility="invisible"/>
 
         </LinearLayout>

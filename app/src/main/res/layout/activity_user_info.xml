@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".portal.me.UserInfoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/title_Cl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/back_Iv"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="@+id/title_Tv"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_back"/>
+
+        <TextView
+            android:id="@+id/title_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/user_info"
+            android:textSize="18sp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/title_Cl"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/avatar_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/user_avatar"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/userAvatar_Iv"
+            android:layout_width="@dimen/dimen_55_dp"
+            android:layout_height="@dimen/dimen_55_dp"
+            app:layout_constraintEnd_toStartOf="@+id/userAvatarNext_Iv"
+            android:src="@mipmap/pic1"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/userAvatarNext_Iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_next"
+            app:layout_constraintEnd_toEndOf="@id/avatar_Tv"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/avatar_Tv"
+            android:layout_marginStart="20dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/name_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="@+id/userAvatar_Iv"
+            app:layout_constraintTop_toBottomOf="@id/userAvatar_Iv"
+            android:gravity="center_vertical"
+            android:text="@string/user_name"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/userName_Tv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toStartOf="@+id/userNameNext_Iv"
+            app:layout_constraintTop_toTopOf="@id/name_Tv"
+            android:text="汪洪泽"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/userNameNext_Iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_next"
+            app:layout_constraintEnd_toEndOf="@id/avatar_Tv"
+            app:layout_constraintTop_toTopOf="@id/name_Tv"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/name_Tv"
+            android:layout_marginStart="20dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/id_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="@+id/name_Tv"
+            app:layout_constraintTop_toBottomOf="@id/userName_Tv"
+            android:gravity="center_vertical"
+            android:text="@string/user_id"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/userId_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toStartOf="@+id/userIdNext_Iv"
+            app:layout_constraintTop_toTopOf="@id/id_Tv"
+            android:text="1181591034"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/userIdNext_Iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_next"
+            app:layout_constraintEnd_toEndOf="@id/id_Tv"
+            app:layout_constraintTop_toTopOf="@id/id_Tv"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"/>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/name_Tv"
+            android:layout_marginStart="20dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/class_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="@+id/id_Tv"
+            app:layout_constraintTop_toBottomOf="@id/userId_Tv"
+            android:gravity="center_vertical"
+            android:text="@string/user_class"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/userClass_Tv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toStartOf="@+id/userClassNext_Iv"
+            app:layout_constraintTop_toTopOf="@id/class_Tv"
+            android:text="软工193"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/userClassNext_Iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_next"
+            app:layout_constraintEnd_toEndOf="@id/class_Tv"
+            app:layout_constraintTop_toTopOf="@id/class_Tv"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"/>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/id_Tv"
+            android:layout_marginStart="20dp"
+            android:background="@color/gray"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

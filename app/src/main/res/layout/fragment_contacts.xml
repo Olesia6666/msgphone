@@ -30,25 +30,36 @@
         android:layout_below="@+id/searchContacts_Et"
         android:layout_marginTop="10dp">
 
-        <ImageView
-            android:id="@+id/friendPic_Iv"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/profilepic3" />
-
-        <TextView
-            android:id="@+id/friendName_Tv"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_toEndOf="@+id/friendPic_Iv"
-            android:gravity="center_vertical"
-            android:text="叶子穆"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:background="@color/white">
+
+            <com.example.msgphone.view.CycleImageView
+                android:id="@+id/friendPic_Cv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/profilepic2" />
+
+            <TextView
+                android:id="@+id/friendName_Tv"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_toEndOf="@+id/friendPic_Cv"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen_10_dp"
+                android:text="叶子穆"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/contacts_Rv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginTop="10dp" />-->
+
 
 
     </RelativeLayout>
