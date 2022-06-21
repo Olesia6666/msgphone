@@ -10,7 +10,8 @@ android {
     defaultConfig {
         applicationId "com.example.msgphone"
         minSdk 21
-        targetSdk 31
+        targetSdk 29
+        versionCode 1
         versionCode 1
         versionName "1.0"
 
@@ -46,6 +47,7 @@ android {
     dataBinding{
         enabled=true
     }
+
     externalNativeBuild {
 //        cmake {
 //            path file('src/main/cpp/CMakeLists.txt')
@@ -55,7 +57,6 @@ android {
 }
 
 dependencies {
-
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
@@ -77,5 +78,7 @@ dependencies {
     implementation("com.netease.yunxin.kit.team:teamkit-ui:9.0.2")
     implementation("com.netease.yunxin.kit.chat:chatkit-ui:9.0.2")
     implementation("com.netease.yunxin.kit.search:searchkit-ui:9.0.2")
-
+    implementation 'io.github.youth5201314:banner:2.2.2'
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+    implementation 'com.github.wildma:PictureSelector:2.1.0'
 }
